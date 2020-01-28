@@ -2,19 +2,16 @@ package src;
 
 class Yousuf {
 
-    /**
-    * This LongestWord() method will find out the longest word
-    * and its length
-    */
+    /**Below method will find the longest word    */
 
     static String LongestWordWithLength(String str)
     {
-        String[] words = str.split(" "); //Spliting each word of the sentence in to an array
+        String[] words = str.split(" "); // parsing in to array and then do traversal in below for loop
         int length = 0;
 
         String s1 = "";
     /**
-    * This for loop will traverse for every word and save its length till it finds the largest word and save it in s1
+    * Traversing happens below
     */
         for(String word:words){
             if(length < word.length()){
